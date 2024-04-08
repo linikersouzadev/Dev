@@ -24,10 +24,34 @@ main {
 
     .form-section {
         flex-grow: 0.3;
+        padding: 0 35px;
+        gap: 34px;
+       
 
         h2 {
             font-size: 20px;
             font-weight: 800;
+        }
+
+        button {
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 12px 24px;
+
+            &.bnt-primary {
+                background-color: $primary-color;
+                color: $gray-bg;
+
+            }
+
+            &.bnt-secondary {
+                border: 1px solid $primary-color;
+                color: $primary-color;
+
+            }
         }
     }
 }
